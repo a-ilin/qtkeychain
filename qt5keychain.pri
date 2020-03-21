@@ -56,7 +56,7 @@ win32 {
     # Remove the following USE_CREDENTIAL_STORE line
     # to use the CryptProtectData Windows API function
     # instead of the Windows Credential Store.
-    DEFINES += USE_CREDENTIAL_STORE
+    #DEFINES += USE_CREDENTIAL_STORE
     contains(DEFINES, USE_CREDENTIAL_STORE) {
         !build_pass:message("Windows Credential Store support: on")
         LIBS += -lAdvapi32
